@@ -18,6 +18,7 @@ header {
 }
 
 .wholePage {
+  background-color: transparent;
   position: relative;
 }
 .navbar {
