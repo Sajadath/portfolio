@@ -100,8 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const burgurMenu = document.getElementById("burgerEvent");
 
-  console.log(burgurMenu);
-
   burgurMenu.addEventListener("click", () => {
     if (navBarControl.classList.contains("navbarTranslateClose")) {
       navBarControl.classList.remove("navbarTranslateClose");
@@ -110,6 +108,5 @@ document.addEventListener("DOMContentLoaded", function () {
       navBarControl.classList.remove("navbarTranslateOpen");
       navBarControl.classList.add("navbarTranslateClose");
     }
-    console.log("Script executed");
   });
 });
