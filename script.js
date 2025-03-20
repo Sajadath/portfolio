@@ -60,7 +60,7 @@ const contentBoxes = document.querySelectorAll(".content-box");
 const projects = document.querySelectorAll(".project");
 
 let isEnglish = localStorage.getItem("language") === "fa" ? false : true;
-
+// TODO: ... update Languages
 function updateLanguageDisplay() {
   const enElements = document.querySelectorAll(".lang-en");
   const faElements = document.querySelectorAll(".lang-fa");
