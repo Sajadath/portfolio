@@ -30,6 +30,12 @@ header {
   box-shadow: 0 5px 20px rgba(0, 188, 212, 0.5);
   backdrop-filter: blur(10px);
   z-index: 10;
+  align-items: center;
+}
+
+.navbar[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
 }
 
 .nav-link {
@@ -60,6 +66,38 @@ header {
 .nav-link:hover {
   color: #fff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.lang-btn {
+  background: cyan;
+
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 188, 212, 0.5);
+}
+
+.lang-en {
+  display: inline;
+}
+
+.lang-fa {
+  display: none;
+}
+
+.navbar[dir="rtl"] .lang-fa,
+.content-box[dir="rtl"] .lang-fa,
+.project[dir="rtl"] .lang-fa {
+  text-align: right;
 }
 
 .header-content {
@@ -131,6 +169,11 @@ section.in-view {
   overflow: hidden;
 }
 
+.content-box[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
 .content-box::before {
   content: "";
   position: absolute;
@@ -166,7 +209,7 @@ section.in-view {
 }
 
 #skills-list li:hover {
-  transform: translateY(-10px) rotate(5deg);
+  transform: scale(1.1);
   box-shadow: 0 15px 35px rgba(0, 188, 212, 0.8);
 }
 
@@ -177,6 +220,11 @@ section.in-view {
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   transition: all 0.6s ease;
+}
+
+.project[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
 }
 
 .project:hover {
@@ -267,6 +315,11 @@ a:hover {
     font-size: 0.9em;
   }
 
+  .lang-btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
   section {
     padding: 50px 15px;
   }
@@ -318,6 +371,11 @@ a:hover {
     width: 80%;
     max-width: 200px;
     top: 5px;
+  }
+
+  .lang-btn {
+    padding: 6px 12px;
+    font-size: 0.8em;
   }
 
   section {

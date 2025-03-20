@@ -16,6 +16,7 @@ const skills = [
   "GitLab",
   "GitHub",
 ];
+
 const skillsList = document.getElementById("skills-list");
 
 skills.forEach((skill, index) => {
@@ -25,7 +26,6 @@ skills.forEach((skill, index) => {
   skillsList.appendChild(li);
 });
 
-// Smooth scrolling for nav links
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -37,7 +37,6 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   });
 });
 
-// In-view animations
 const sections = document.querySelectorAll("section");
 
 const observer = new IntersectionObserver(
@@ -48,11 +47,50 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  {
-    threshold: 0.2,
-  }
+  { threshold: 0.2 }
 );
 
 sections.forEach((section) => {
   observer.observe(section);
+});
+
+const langToggleBtn = document.getElementById("lang-toggle");
+const navbar = document.querySelector(".navbar");
+const contentBoxes = document.querySelectorAll(".content-box");
+const projects = document.querySelectorAll(".project");
+
+let isEnglish = localStorage.getItem("language") === "fa" ? false : true;
+
+function updateLanguageDisplay() {
+  const enElements = document.querySelectorAll(".lang-en");
+  const faElements = document.querySelectorAll(".lang-fa");
+
+  if (isEnglish) {
+    enElements.forEach((el) => (el.style.display = "inline"));
+    faElements.forEach((el) => (el.style.display = "none"));
+    langToggleBtn.textContent = "English";
+    document.documentElement.lang = "en";
+    navbar.removeAttribute("dir");
+    contentBoxes.forEach((box) => box.removeAttribute("dir"));
+    projects.forEach((project) => project.removeAttribute("dir"));
+    localStorage.setItem("language", "en");
+  } else {
+    enElements.forEach((el) => (el.style.display = "none"));
+    faElements.forEach((el) => (el.style.display = "inline"));
+    langToggleBtn.textContent = "فارسی";
+    document.documentElement.lang = "fa";
+    navbar.setAttribute("dir", "rtl");
+    contentBoxes.forEach((box) => box.setAttribute("dir", "rtl"));
+    projects.forEach((project) => project.setAttribute("dir", "rtl"));
+    localStorage.setItem("language", "fa");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateLanguageDisplay();
+});
+
+langToggleBtn.addEventListener("click", () => {
+  isEnglish = !isEnglish;
+  updateLanguageDisplay();
 });

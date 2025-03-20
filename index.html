@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sajad Atharyan - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./android-chrome-512x512.png" />
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
@@ -13,118 +14,252 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#about" class="nav-link"
+          ><span class="lang-en">About</span
+          ><span class="lang-fa">درباره من</span></a
+        >
+        <a href="#skills" class="nav-link"
+          ><span class="lang-en">Skills</span
+          ><span class="lang-fa">مهارت‌ها</span></a
+        >
+        <a href="#projects" class="nav-link"
+          ><span class="lang-en">Projects</span
+          ><span class="lang-fa">پروژه‌ها</span></a
+        >
+
+        <a href="#contact" class="nav-link"
+          ><span class="lang-en">Contact</span
+          ><span class="lang-fa">تماس</span></a
+        >
+        <button id="lang-toggle" class="lang-btn">English</button>
       </nav>
       <div class="header-content">
-        <h1>Sajad Atharyan</h1>
-        <p>Front-End Developer</p>
+        <h1>
+          <span class="lang-en">Sajad Atharyan</span
+          ><span class="lang-fa">سجاد اطهریان</span>
+        </h1>
+        <p>
+          <span class="lang-en">Front-End Developer</span
+          ><span class="lang-fa">توسعه‌دهنده رابط کاربری</span>
+        </p>
       </div>
     </header>
 
     <section id="about">
-      <h2>About Me</h2>
+      <h2>
+        <span class="lang-en">About Me</span
+        ><span class="lang-fa">درباره من</span>
+      </h2>
       <div class="content-box">
         <p>
-          Motivated and detail-oriented Junior Front-End Developer with a strong
-          foundation in modern web development technologies, including React,
-          HTML, CSS, and JavaScript. Passionate about building responsive,
-          user-friendly interfaces and eager to contribute to innovative
-          projects while growing technical expertise in a collaborative team
-          environment.
+          <span class="lang-en">
+            Motivated and detail-oriented Front-End Developer with a strong
+            foundation in modern web development technologies, including React,
+            HTML, CSS, and JavaScript. Passionate about building responsive,
+            user-friendly interfaces and eager to contribute to innovative
+            projects while growing technical expertise in a collaborative team
+            environment.
+          </span>
+          <span class="lang-fa">
+            توسعه‌دهنده رابط کاربری با انگیزه و دقیق، با پایه‌ای قوی در
+            تکنولوژی‌های مدرن توسعه وب از جمله React، HTML، CSS و JavaScript.
+            علاقه‌مند به ساخت رابط‌های کاربری پاسخ‌گو و کاربرپسند و مشتاق به
+            مشارکت در پروژه‌های نوآورانه و رشد تخصص فنی در محیط تیمی
+            همکاری‌کننده.
+          </span>
         </p>
       </div>
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
+      <h2>
+        <span class="lang-en">Skills</span><span class="lang-fa">مهارت‌ها</span>
+      </h2>
       <div class="skill-box">
         <ul id="skills-list" class="content-box"></ul>
       </div>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>
+        <span class="lang-en">Projects</span
+        ><span class="lang-fa">پروژه‌ها</span>
+      </h2>
       <div class="content-box">
         <div class="project">
-          <h3>Hotel Reservation Website</h3>
+          <h3>
+            <span class="lang-en">Hotel Reservation Website With NextJs</span
+            ><span class="lang-fa">وب‌سایت رزرو هتل با NextJs</span>
+          </h3>
           <p>
-            A website for reserving luxury cabins with NextJs tailwind
-            framework.
+            <span class="lang-en"
+              >A website for reserving luxury cabins with NextJs tailwind
+              framework.</span
+            >
+            <span class="lang-fa"
+              >وب‌سایتی برای رزرو کابین‌های لوکس با فریم‌ورک NextJs و
+              Tailwind.</span
+            >
           </p>
           <a href="https://sajadathhotel.vercel.app/" target="_blank"
-            >View Project</a
+            ><span class="lang-en">View Project</span
+            ><span class="lang-fa">مشاهده پروژه</span></a
           >
         </div>
         <div class="project">
-          <h3>Sadrtell Website</h3>
+          <h3>
+            <span class="lang-en">Sadrtell Website</span
+            ><span class="lang-fa">وب‌سایت صدرتل</span>
+          </h3>
           <p>
-            Official website for Sadrtell, showcasing company services and
-            features.
+            <span class="lang-en"
+              >Official website for Sadrtell, showcasing company services and
+              features.</span
+            >
+            <span class="lang-fa"
+              >وب‌سایت رسمی صدرتل، نمایش خدمات و ویژگی‌های شرکت.</span
+            >
           </p>
-          <a href="https://sadrtell.ir" target="_blank">View Project</a>
+          <a href="https://sadrtell.ir" target="_blank"
+            ><span class="lang-en">View Project</span
+            ><span class="lang-fa">مشاهده پروژه</span></a
+          >
         </div>
         <div class="project">
-          <h3>Fast Pizza React Website</h3>
+          <h3>
+            <span class="lang-en">Fast Pizza React Website</span
+            ><span class="lang-fa">وب‌سایت FastPizza با React</span>
+          </h3>
           <p>
-            A React-based website for ordering pizzas with a fast and intuitive
-            UI.
+            <span class="lang-en"
+              >A React-based website for ordering pizzas with a fast and
+              intuitive UI.</span
+            >
+            <span class="lang-fa"
+              >وب‌سایتی مبتنی بر React برای سفارش پیتزا با رابط کاربری سریع و
+              بصری.</span
+            >
           </p>
         </div>
         <div class="project">
-          <h3>React-Quiz</h3>
+          <h3>
+            <span class="lang-en">React-Quiz</span
+            ><span class="lang-fa">کوییز React</span>
+          </h3>
           <p>
-            An interactive quiz application built with React for testing
-            knowledge.
+            <span class="lang-en"
+              >An interactive quiz application built with React for testing
+              knowledge.</span
+            >
+            <span class="lang-fa"
+              >برنامه کوییز تعاملی ساخته‌شده با React برای آزمایش دانش.</span
+            >
           </p>
         </div>
         <div class="project">
-          <h3>Sadrtell Website with React</h3>
+          <h3>
+            <span class="lang-en">Sadrtell Website with React</span
+            ><span class="lang-fa">وب‌سایت صدرتل با React</span>
+          </h3>
           <p>
-            A reimagined version of the Sadrtell website using React for
-            enhanced performance.
+            <span class="lang-en"
+              >A reimagined version of the Sadrtell website using React for
+              enhanced performance.</span
+            >
+            <span class="lang-fa"
+              >نسخه بازطراحی‌شده وب‌سایت سدرتل با استفاده از React برای عملکرد
+              بهتر.</span
+            >
           </p>
           <a href="https://sadrtell.vercel.app/" target="_blank"
-            >View Project</a
+            ><span class="lang-en">View Project</span
+            ><span class="lang-fa">مشاهده پروژه</span></a
           >
         </div>
         <div class="project">
-          <h3>Todo List Mini App</h3>
-          <p>A simple yet functional todo list app to manage daily tasks.</p>
-        </div>
-        <div class="project">
-          <h3>usePopcorn App</h3>
-          <p>A movie rating and tracking app built with React.</p>
-        </div>
-        <div class="project">
-          <h3>Workout App</h3>
+          <h3>
+            <span class="lang-en">Todo List Mini App</span
+            ><span class="lang-fa">برنامه کوچک لیست وظایف</span>
+          </h3>
           <p>
-            An app to plan and track workout routines with a clean interface.
+            <span class="lang-en"
+              >A simple yet functional todo list app to manage daily
+              tasks.</span
+            >
+            <span class="lang-fa"
+              >برنامه‌ای ساده اما کاربردی برای مدیریت وظایف روزانه.</span
+            >
           </p>
         </div>
         <div class="project">
-          <h3>WorldWise</h3>
-          <p>A travel tracking app to log visited locations and experiences.</p>
+          <h3>
+            <span class="lang-en">usePopcorn App</span
+            ><span class="lang-fa">برنامه usePopcorn</span>
+          </h3>
+          <p>
+            <span class="lang-en"
+              >A movie rating and tracking app built with React.</span
+            >
+            <span class="lang-fa"
+              >برنامه‌ای برای امتیازدهی و پیگیری فیلم‌ها ساخته‌شده با
+              React.</span
+            >
+          </p>
+        </div>
+        <div class="project">
+          <h3>
+            <span class="lang-en">Workout App</span
+            ><span class="lang-fa">برنامه تمرینی</span>
+          </h3>
+          <p>
+            <span class="lang-en"
+              >An app to plan and track workout routines with a clean
+              interface.</span
+            >
+            <span class="lang-fa"
+              >برنامه‌ای برای برنامه‌ریزی و پیگیری روال‌های تمرینی با رابط
+              کاربری تمیز.</span
+            >
+          </p>
+        </div>
+        <div class="project">
+          <h3>
+            <span class="lang-en">WorldWise</span
+            ><span class="lang-fa">جهان‌بین</span>
+          </h3>
+          <p>
+            <span class="lang-en"
+              >A travel tracking app to log visited locations and
+              experiences.</span
+            >
+            <span class="lang-fa"
+              >برنامه‌ای برای پیگیری سفرها و ثبت مکان‌ها و تجربیات
+              بازدیدشده.</span
+            >
+          </p>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
+      <h2>
+        <span class="lang-en">Contact</span><span class="lang-fa">تماس</span>
+      </h2>
       <div class="content-box">
         <p>
-          Email: <a href="mailto:Sajadath1@gmail.com">Sajadath1@gmail.com</a>
+          <span class="lang-en">Email:</span><span class="lang-fa">ایمیل:</span>
+          <a href="mailto:Sajadath1@gmail.com">Sajadath1@gmail.com</a>
         </p>
         <p>
-          GitHub:
+          <span class="lang-en">GitHub:</span
+          ><span class="lang-fa">گیت‌هاب:</span>
           <a href="https://github.com/Sajadath" target="_blank"
             >github.com/Sajadath</a
           >
         </p>
         <p>
-          Telegram:
+          <span class="lang-en">Telegram:</span
+          ><span class="lang-fa">تلگرام:</span>
           <a href="https://t.me/sajadath" target="_blank">t.me/sajadath</a>
         </p>
       </div>
