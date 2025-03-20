@@ -1,7 +1,10 @@
 const skills = [
-  "React",
   "HTML",
   "CSS",
+  "React",
+  "Next Js",
+  "JavaScript",
+  "TypeScript",
   "Tailwind",
   "Redux",
   "React Query",
